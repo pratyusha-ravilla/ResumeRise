@@ -1,0 +1,100 @@
+
+//resume URL's
+Create a new resume:
+
+Method: POST
+URL: http://localhost:9900/api/resumes
+Headers: Include the necessary headers, such as Content-Type and Authorization (if required).
+Body: Provide the JSON payload for creating a new resume.
+Get all resumes for a user:
+
+Method: GET
+URL: http://localhost:9900/api/resumes
+Headers: Include the Authorization header with the user's token if required.
+Get a specific resume:
+
+Method: GET
+URL: http://localhost:9900/api/resumes/:id
+Replace :id with the ID of the specific resume you want to retrieve.
+Headers: Include the Authorization header with the user's token if required.
+Update a specific resume:
+
+Method: PUT
+URL: http://localhost:9900/api/resumes/:id
+Replace :id with the ID of the resume you want to update.
+Headers: Include the necessary headers, such as Content-Type and Authorization (if required).
+Body: Provide the JSON payload with the updated resume data.
+Delete a specific resume:
+
+Method: DELETE
+URL: http://localhost:9900/api/resumes/:id
+Replace :id with the ID of the resume you want to delete.
+Headers: Include the Authorization header with the user's token if required.
+Download resume:
+
+Method: GET
+URL: http://localhost:9900/api/resumes/:id/download
+Replace :id with the ID of the resume you want to download.
+Headers: Include the Authorization header with the user's token if required.
+
+
+
+
+
+//auth URL's
+User Signup:
+
+Method: POST
+URL: http://localhost:9900/api/auth/signup
+Headers: Include the necessary headers, such as Content-Type.
+Body: Provide the JSON payload with the user's signup data, including username, email, and password.
+User Login:
+
+Method: POST
+URL: http://localhost:9900/api/auth/login
+Headers: Include the necessary headers, such as Content-Type.
+Body: Provide the JSON payload with the user's login credentials, including email and password.
+
+
+//user URL's
+
+Get User Dashboard:
+
+Method: GET
+URL: http://localhost:9900/api/users/dashboard
+Headers: Include the necessary headers, such as Authorization with the user's token.
+Get User Profile:
+
+Method: GET
+URL: http://localhost:9900/api/users/profile
+Headers: Include the necessary headers, such as Authorization with the user's token.
+Update User Profile:
+
+Method: PUT
+URL: http://localhost:9900/api/users/profile
+Headers: Include the necessary headers, such as Content-Type and Authorization with the user's token.
+Body: Provide the JSON payload with the updated user profile data.
+Get All Users:
+
+Method: GET
+URL: http://localhost:9900/api/users/
+Headers: Include the necessary headers, such as Authorization with the user's token.
+Get User by ID:
+
+Method: GET
+URL: http://localhost:9900/api/users/{userId}
+Replace {userId} with the actual ID of the user you want to retrieve.
+Headers: Include the necessary headers, such as Authorization with the user's token.
+Update User by ID:
+
+Method: PUT
+URL: http://localhost:9900/api/users/{userId}
+Replace {userId} with the actual ID of the user you want to update.
+Headers: Include the necessary headers, such as Content-Type and Authorization with the user's token.
+Body: Provide the JSON payload with the updated user data.
+Delete User by ID:
+
+Method: DELETE
+URL: http://localhost:9900/api/users/{userId}
+Replace {userId} with the actual ID of the user you want to delete.
+Headers: Include the necessary headers, such as Authorization with the user's token.
